@@ -1,98 +1,146 @@
-root {
+:root {
     --primary-color: #505033;
     --secondary-color: #264969;
-    --accent-color: #cfcfb4;
     --background-color: #b4cde4;
-    --text-color: #333;
+    --text-color1: #333;
+    --font-primary: 'Merriweather', roboto;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font-primary);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    max-width: 100%;
+    margin: 0 auto;
 }
 header {
-    background-color: #333;
-    color: #fff;
-    margin: 1rem auto;
+    background-color: var(--primary-color);
+    padding: 20px;  
+}
+.header-container {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr auto 2fr;
     align-items: center;
-    border-bottom: 1px solid #ccc;
-    max-width: 1000px;
-    padding: 20px;
 }
-header img {
-    width: 64px;
-    margin: 0 0.25rem 0 1rem;
-    max-height: 50px;
+.logo {
+    width: 70px;
+    height: auto;
 }
-header nav {
-    background-color: #505033;
-    padding: 20px;
-    text-align: right;
-    display: flex;
-    list-style: none;
-    flex: 1 1 100%
-}
-nav a {
-    padding: 20px;
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    margin-left: 20px;
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-nav a:hover {
-    background: #333;
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
     color: white;
-    Font-weight: 700;
-    text-decoration: underline;
-    
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #3480b2;
+}
+img {
+    max-width: 100%;
 }
 .hero {
     position: relative;
     width: 100%;
     height: 500px;
-    top: 10px;
-}
+    background-color: var(--background-color);
+ }
 .hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
-    top: 0;
-    left: 0;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: aliceblue;
+    
 }
 .hero article {
     position: absolute;
     border-radius: 10px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    left: 20px;  
+    top: 20%;
+    background-color: var(--background-color);
+    width: 95%;
+    right: 3%;  
     opacity: 0.8;
-    box-shadow: rgba(0, 0, 0, 0.1);
-    bottom: 200px;
 }
 .hero article img {
-    max-width: 100px;
     float: right;
+    max-width: 220px;
     margin: 10px;
+    border-radius: 10px;
 }
-h2 {
-    color:#264969;
+.history {
+    padding: 20px;
+    background-color: #E6E6E6;
+}
 
+.history h2 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
-p{ 
-    color: black;
+
+.history p {
+    font-size: 1.2rem;
 }
-img {
-    padding: 10px;
-    width: 90%; 
-    height: 90%; 
-    object-fit: cover; 
-    border-radius: 20px;
+
+/* Adventure Section Styling */
+.adventure {
+    margin: 40px;
 }
-footer {
-    padding: 10px;
+.adventure-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+.adventure-img figure {
+    flex: 5;
+    min-width: 200px;
     text-align: center;
-    background-color: #333;
 }
-footer img {
-    width: 50px;
+
+.adventure figcaption {
+    margin-top: 10px;
+    font-weight: bold;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+}
+.social-links a img {
+    width: 30px;
+    margin-left: 10px;
+}
+.social-links nav a img {
+    right: 10px;
+}
+
 
