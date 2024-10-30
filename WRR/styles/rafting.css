@@ -272,6 +272,35 @@ input {
 .cta-button:hover {
     background-color: rgb(67, 35, 2);
 }
+.trip-descriptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: rgb(227, 224, 224);
+}
+
+.trip-descriptions h2 {
+    font-size: 2rem; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+.trip {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    margin: 20px; 
+    padding: 20px;
+    border: 1px solid var(--color9);
+    border-radius: 10px;
+    text-align: center; 
+}
+.trip img {
+    width: 80%; 
+    max-width: 200px; 
+    height: auto; 
+    border-radius: 10px; 
+    margin-right: 10px; 
+}
 .grid-layout {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
