@@ -4,8 +4,8 @@
   --secondary-color: #2c5282; /* medium blue */
   --accent1-color: #2d3748; /* dark slate */
   --accent2-color: #edf2f7; /* light gray */
-  --heading-font: "Merriweather", Georgia, serif;
-  --body-font: "Roboto", Arial, sans-serif;
+  --heading-font: "Times New Roman", Georgia, serif;
+  --body-font: Helvetica, Arial, sans-serif;
 }
 
 /* ===== RESET ===== */
@@ -19,6 +19,7 @@
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
+  background-color: var(--accent2-color);
 }
 
 /* ===== PAGE WIDTH & CENTERING ===== */
