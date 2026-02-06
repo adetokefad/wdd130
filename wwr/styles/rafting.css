@@ -46,11 +46,6 @@ article {
   padding: 8px;
 }
 
-/* ===== SOCIAL MEDIA LINKS ===== */
-.socialmedia a {
-  text-decoration: none;
-}
-
 /* ===== HEADER ===== */
 .header-container {
   display: flex;
@@ -182,6 +177,11 @@ footer {
   color: #444;
   margin: 2px 0;
   padding: 0;
+}
+
+/* ===== SOCIAL MEDIA LINKS ===== */
+.socialmedia a {
+  text-decoration: none;
 }
 
 .socialmedia {
