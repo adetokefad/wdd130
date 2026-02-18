@@ -529,7 +529,7 @@ button[type="submit"]:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hero-content {
@@ -540,7 +540,15 @@ button[type="submit"]:hover {
   text-align: center;
   color: white;
   z-index: 1;
-  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.hero-content h1,
+.hero-content p {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 .hero-content h1 {
@@ -548,6 +556,7 @@ button[type="submit"]:hover {
   margin-bottom: 1rem;
   font-family: "Montserrat", sans-serif;
   color: white;
+  background: none;
 }
 
 .hero-content p {
@@ -787,6 +796,7 @@ button[type="submit"]:hover {
 
 .trips-table th,
 .trips-table td {
+  color: black;
   padding: 1rem;
   text-align: left;
   border-bottom: 1px solid var(--accent2-color);
@@ -798,7 +808,7 @@ button[type="submit"]:hover {
 }
 
 .trips-table tr:nth-child(even) {
-  color: #1a3055;
+  color: black;
   background-color: rgba(
     144,
     171,
@@ -808,6 +818,7 @@ button[type="submit"]:hover {
 }
 
 .trips-table tr:hover {
+  color: black;
   background-color: rgba(
     241,
     211,
@@ -872,6 +883,7 @@ button[type="submit"]:hover {
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 20px;
+    padding-top: 100px;
   }
 
   nav {
@@ -908,8 +920,8 @@ button[type="submit"]:hover {
     height: 400px;
   }
 
-  .hero-content {
-    padding-top: 100px;
+  .hero-content p {
+    font-size: 1rem;
   }
 
   .trip-grid {
