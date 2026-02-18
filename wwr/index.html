@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page- Down Under Rafting</title>
+    <title>Home Page of the Down Under Rafting</title>
     <meta
       name="description"
       content="Down Under Rafting - Experience the thrill of whitewater rafting with us!"
@@ -21,7 +21,7 @@
       <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
-        <a href="trip.html">Trips</a>
+        <a href="trips.html">Trips</a>
         <a href="contact.html">Contact Us</a>
       </nav>
     </header>
@@ -38,32 +38,42 @@
         </div>
       </div>
 
-      <section class="newsletter">
-        <h2>Stay Updated with Our Adventures</h2>
-        <form class="signup-form">
-          <div class="form-group">
-            <label for="name">Full-Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="fullName"
-              autocomplete="given-name"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              autocomplete="email"
-              required
-            />
-          </div>
-          <button type="submit">Sign Up for Updates</button>
-        </form>
-      </section>
+      <form class="signup-form">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="fullName" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <fieldset>
+          <legend>Preferred Adventure Type:</legend>
+          <label
+            ><input type="radio" name="adventure" value="family" />
+            Family</label
+          >
+          <label
+            ><input type="radio" name="adventure" value="halfday" />
+            Half-Day</label
+          >
+          <label
+            ><input type="radio" name="adventure" value="expert" />
+            Expert</label
+          >
+        </fieldset>
+        <div class="form-group">
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments"></textarea>
+        </div>
+        <div class="form-group">
+          <label
+            ><input type="checkbox" id="newsletter" name="newsletter" />
+            Subscribe to newsletter</label
+          >
+        </div>
+        <button type="submit">Sign Up for Updates</button>
+      </form>
 
       <section class="features-grid">
         <div class="feature">
@@ -97,7 +107,7 @@
           Explore our range of exciting trips and find the perfect adventure for
           you
         </p>
-        <a href="trip.html" class="cta-button">View Our Trips</a>
+        <a href="trips.html" class="cta-button">View Our Trips</a>
       </section>
     </main>
 

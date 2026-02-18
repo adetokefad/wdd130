@@ -504,15 +504,23 @@ button[type="submit"]:hover {
   }
 }
 
-/* Hero Section */
+/* Shared Hero Styles */
+.hero,
 .hero-home {
   position: relative;
   height: 600px;
   width: 100%;
-  background-image: url("../images/hero_image.webp");
   background-size: cover;
   background-position: center;
   margin-bottom: 2rem;
+}
+
+.hero-home {
+  background-image: url("../images/hero_image.webp");
+}
+
+.hero {
+  background-image: url("../images/hero-trip.webp");
 }
 
 .hero-overlay {
@@ -540,6 +548,10 @@ button[type="submit"]:hover {
   margin-bottom: 1rem;
   font-family: "Montserrat", sans-serif;
   color: white;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
 }
 
 /* Newsletter Section */
@@ -574,7 +586,8 @@ button[type="submit"]:hover {
   font-weight: bold;
 }
 
-.form-group input {
+.form-group input,
+.form-group textarea {
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
@@ -645,8 +658,8 @@ button[type="submit"]:hover {
 
 .cta-button {
   display: inline-block;
-  background-color: var(--light-text);
-  color: var(--primary-color);
+  background-color: var(--accent1-color); /* darker background */
+  color: white; /* high contrast text */
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   border-radius: 4px;
@@ -654,7 +667,8 @@ button[type="submit"]:hover {
 }
 
 .cta-button:hover {
-  background-color: var(--accent2-color);
+  background-color: var(--secondary-color);
+  color: white;
 }
 
 /* Trips Page Specific Styles */
@@ -662,49 +676,6 @@ button[type="submit"]:hover {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
-}
-
-/* Hero Section */
-.hero {
-  position: relative;
-  height: 600px;
-  width: 100%;
-  background-image: url("../images/hero-trip.webp");
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 2rem;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.hero-content {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  color: white;
-  z-index: 1;
-  padding-top: 200px;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  background: none;
-}
-
-.hero-content p {
-  font-size: 1.5rem;
 }
 
 /* Trip Cards Grid */
